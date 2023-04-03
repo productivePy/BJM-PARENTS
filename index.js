@@ -3,6 +3,7 @@ const app = express();
 const fs = require("fs");
 const path = require("path");
 const server = require("http").createServer(app);
+const fetch = require('node-fetch');
 const io = require("socket.io")(server, { cors: { origin: "*" } });
 
 app.use(express.static(path.join(__dirname, "public")));
