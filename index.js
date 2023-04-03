@@ -35,7 +35,7 @@ app.get("/*", (req, res) => {
   }
 });
 
-server.listen(process.env.PORT, '192.168.1.4');
+server.listen(3000);
 io.on("connection", (socket) => {
   console.log(socket.id);
   socket.on("details", (data) => {
